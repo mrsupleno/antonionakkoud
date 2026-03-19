@@ -56,37 +56,51 @@
             text-align: center;
         }
 
-        /* FAQ Section */
-        .faq-section {
-            background: #f5f0e8;
+        /* Sacramento Sections */
+        .sacramento-section {
             padding: 60px 40px;
+            background: #1a0f0a;
             text-align: center;
         }
-        .faq-section h2 {
+        .sacramento-alt {
+            background: #0f0a06;
+        }
+        .sacramento-section h2 {
             font-family: 'Cinzel', serif;
-            color: #6b3a1f;
+            color: #C9A84C;
             font-size: 2em;
-            margin-bottom: 40px;
+            margin-bottom: 16px;
+        }
+        .sacramento-intro {
+            color: #b8a98a;
+            font-family: 'Crimson Text', serif;
+            font-size: 1.15em;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            font-style: italic;
+        }
+        .faq-list {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
         }
         .faq-item {
-            background: white;
+            background: rgba(201,168,76,0.07);
             border-left: 4px solid #C9A84C;
             border-radius: 8px;
             padding: 20px 24px;
-            margin: 16px auto;
-            max-width: 800px;
-            text-align: left;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            margin: 16px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
         }
         .faq-item h3 {
             font-family: 'Cinzel', serif;
-            color: #6b3a1f;
-            font-size: 1.05em;
+            color: #C9A84C;
+            font-size: 1em;
             margin-bottom: 8px;
         }
         .faq-item p {
-            color: #4a3728;
-            line-height: 1.6;
+            color: #c8b99a;
+            line-height: 1.7;
             font-family: 'Crimson Text', serif;
             font-size: 1.05em;
         }
@@ -114,7 +128,8 @@
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#igreja">A Igreja</a></li>
                 <li><a href="#liturgia">Liturgia</a></li>
-                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#batizados">Batizados</a></li>
+                <li><a href="#casamentos">Casamentos</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </div>
@@ -188,54 +203,66 @@
                             <p class="liturgy-time">Conforme calendário ortodoxo</p>
                             <p class="liturgy-desc">Celebrações especiais seguindo o calendário juliano da tradição ortodoxa oriental.</p>
                         </div>
-                        <div class="liturgy-card">
-                            <div class="liturgy-icon">✦</div>
-                            <h3>Batizados</h3>
-                            <p class="liturgy-time">Por agendamento — (67) 3324-7937</p>
-                            <p class="liturgy-desc">Batismo por imersão na tradição síria ortodoxa. Exige catequese prévia para pais e padrinhos. Padrinhos devem ser cristãos ortodoxos praticantes.</p>
-                        </div>
                     </div>
 
                     <img src="assets/igreja.jpg" alt="Interior da Igreja Síria Ortodoxa São Jorge" style="width:100%;max-width:700px;border-radius:12px;border:3px solid #C9A84C;box-shadow:0 8px 30px rgba(0,0,0,0.5);margin:20px auto;display:block;">
-
-                    <p style="text-align:center;margin-top:24px;font-style:italic;color:#8b7355;font-size:0.95em;">
-                        Para Batizados e outros sacramentos, ligue <strong>(67) 3324-7937</strong> para agendamento e informações sobre documentação necessária.
-                    </p>
                 </div>
             </div>
         </section>
 
-        <section id="faq" class="faq-section">
-            <h2>✦ Perguntas Frequentes ✦</h2>
+        <section id="batizados" class="sacramento-section">
+            <h2>✦ Batizados ✦</h2>
+            <p class="sacramento-intro">O Batismo é o primeiro e fundamental sacramento da vida cristã na tradição síria ortodoxa.</p>
             
-            <div class="faq-item">
-                <h3>Como é realizado o Batizado na Igreja Síria Ortodoxa?</h3>
-                <p>O Batismo é realizado por imersão, seguindo o rito sírio ortodoxo ancestral. É necessária a presença do padre e de padrinhos cristãos ortodoxos praticantes.</p>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h3>Como é realizado o Batizado?</h3>
+                    <p>O Batismo é realizado por imersão, seguindo o rito sírio ortodoxo ancestral. É necessária a presença do padre e de padrinhos cristãos ortodoxos praticantes.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Quais documentos são necessários?</h3>
+                    <p>Certidão de nascimento da criança, documentos dos pais e padrinhos, e participação na catequese prévia obrigatória para pais e padrinhos.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Quem pode ser padrinho ou madrinha?</h3>
+                    <p>Os padrinhos devem ser cristãos ortodoxos praticantes. É uma responsabilidade espiritual séria dentro da tradição ortodoxa oriental.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Qual a melhor idade para batizar?</h3>
+                    <p>A Igreja incentiva o Batismo nos primeiros meses de vida da criança, seguindo a tradição ancestral da Igreja de Antioquia.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Como agendar?</h3>
+                    <p>Ligue para <strong>(67) 3324-7937</strong> — Secretaria: segunda a sexta, 8h-10h e 14h-16h.</p>
+                </div>
             </div>
+        </section>
 
-            <div class="faq-item">
-                <h3>O que é necessário para batizar meu filho?</h3>
-                <p>São necessários: certidão de nascimento da criança, documentos dos pais e padrinhos, e participação na catequese prévia. A Igreja incentiva o Batismo nos primeiros meses de vida da criança.</p>
-            </div>
-
-            <div class="faq-item">
-                <h3>Quem pode ser padrinho ou madrinha?</h3>
-                <p>Os padrinhos devem ser cristãos ortodoxos praticantes. É uma responsabilidade espiritual séria dentro da tradição ortodoxa oriental.</p>
-            </div>
-
-            <div class="faq-item">
-                <h3>A Igreja celebra missas em português?</h3>
-                <p>Sim. As missas de domingo são celebradas em árabe às 9h30 e em português às 11h, acolhendo toda a comunidade.</p>
-            </div>
-
-            <div class="faq-item">
-                <h3>Como posso agendar um Batizado ou outro sacramento?</h3>
-                <p>Entre em contato pelo telefone <strong>(67) 3324-7937</strong> ou visite a Igreja na Rua 14 de Julho, 1060 — Centro, Campo Grande/MS.</p>
-            </div>
-
-            <div class="faq-item">
-                <h3>A Igreja é aberta para visitas?</h3>
-                <p>Sim. A Igreja Síria Ortodoxa São Jorge é um patrimônio histórico da comunidade síria no Centro-Oeste brasileiro. Visitas são bem-vindas, especialmente durante os horários de liturgia.</p>
+        <section id="casamentos" class="sacramento-section sacramento-alt">
+            <h2>✦ Casamentos ✦</h2>
+            <p class="sacramento-intro">O sacramento do Matrimônio é celebrado como coroação dos noivos, dentro da Igreja, com toda a solenidade da liturgia síria ortodoxa.</p>
+            
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h3>Como funciona o casamento na Igreja Síria Ortodoxa?</h3>
+                    <p>O casamento é um sacramento de coroação realizado dentro da Igreja, com a liturgia completa do rito sírio ortodoxo. Não é permitido casamento apenas civil sem o sacramento religioso para membros da comunidade.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>É possível casamento misto (um cônjuge não-ortodoxo)?</h3>
+                    <p>Casamentos mistos são possíveis mediante autorização específica da autoridade eclesiástica. Entre em contato para orientações.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Quais documentos são necessários?</h3>
+                    <p>Certidões de Batismo ortodoxo de ambos, certidão de estado civil (solteiros), documento de casamento civil realizado previamente, e outros documentos a confirmar na secretaria.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Posso decorar a Igreja?</h3>
+                    <p>A decoração é permitida de forma sutil e respeitosa, sem interferir nos ícones e elementos sagrados da Igreja.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Como agendar?</h3>
+                    <p>Ligue para <strong>(67) 3324-7937</strong> — Secretaria: segunda a sexta, 8h-10h e 14h-16h. Sábados a secretaria não funciona.</p>
+                </div>
             </div>
         </section>
 
