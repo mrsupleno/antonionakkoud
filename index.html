@@ -12,6 +12,50 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    
+    <style>
+        /* Hero com foto real */
+        .hero {
+            background: linear-gradient(135deg, #1a0f0a 0%, #2d1a0f 50%, #1a0f0a 100%);
+            padding: 80px 0;
+        }
+        
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+        
+        .avatar {
+            width: 260px;
+            height: 260px;
+            border-radius: 50%;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .hero-photo {
+            width: 260px;
+            height: 260px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: top center;
+            border: 5px solid #C9A84C;
+            box-shadow: 0 0 0 10px rgba(201,168,76,0.15), 
+                        0 0 0 15px rgba(201,168,76,0.08), 
+                        0 0 50px rgba(201,168,76,0.3);
+        }
+        
+        .hero-title {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .hero-subtitle {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <header class="hero">
@@ -19,12 +63,7 @@
         <div class="container">
             <div class="hero-content">
                 <div class="avatar">
-                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="100" cy="100" r="95" fill="#2d0a0a" stroke="#d4af37" stroke-width="3"/>
-                        <circle cx="100" cy="100" r="85" fill="none" stroke="#d4af37" stroke-width="1" opacity="0.5"/>
-                        <text x="100" y="115" font-family="Cinzel, serif" font-size="60" fill="#d4af37" text-anchor="middle" font-weight="600">AN</text>
-                        <path d="M 60 40 L 140 40 L 140 160 L 120 160 L 120 60 L 80 60 L 80 160 L 60 160 Z" fill="none" stroke="#d4af37" stroke-width="2" opacity="0.3"/>
-                    </svg>
+                    <img src="assets/antonio.jpg" alt="Monsenhor Antônio Nakkoud" class="hero-photo">
                 </div>
                 <h1 class="hero-title">Monsenhor Antônio Nakkoud</h1>
                 <p class="hero-subtitle">Pároco da Igreja Síria Ortodoxa São Jorge</p>
@@ -140,7 +179,7 @@
                         </div>
                         <div class="map-container">
                             <iframe 
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3700.2699786956844!2d-54.648486!3d-20.4653889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9486e7ca8b7e3b4b%3A0x1234567890abcdef!2sRua%2014%20de%20Julho%2C%201060%20-%20Centro%2C%20Campo%20Grande%20-%20MS!5e0!3m2!1spt-BR!2sbr!4v1234567890123!5m2!1spt-BR!2sbr" 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3700.269978695684!2d-54.648486!3d-20.465388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9486e7ca8b7e3b4b%3A0x1234567890abcdef!2sRua%2014%20de%20Julho%2C%201060%20-%20Centro%2C%20Campo%20Grande%20-%20MS!5e0!3m2!1spt-BR!2sbr!4v1234567890123!5m2!1spt-BR!2sbr" 
                                 width="100%" 
                                 height="100%" 
                                 style="border:0;" 
