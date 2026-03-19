@@ -58,26 +58,40 @@
 
         /* Sacramento Sections */
         .sacramento-section {
-            padding: 60px 40px;
-            background: #1a0f0a;
+            padding: 70px 40px;
             text-align: center;
         }
-        .sacramento-alt {
-            background: #0f0a06;
+        .sacramento-casamentos {
+            background: linear-gradient(180deg, #1a0d05 0%, #0f0800 100%);
+            border-top: 2px solid rgba(201,168,76,0.3);
         }
-        .sacramento-section h2 {
+        .sacramento-batizados {
+            background: linear-gradient(180deg, #0a0f1e 0%, #060b14 100%);
+            border-top: 2px solid rgba(201,168,76,0.3);
+        }
+        .sacramento-container {
+            max-width: 860px;
+            margin: 0 auto;
+        }
+        .sacramento-title {
             font-family: 'Cinzel', serif;
             color: #C9A84C;
-            font-size: 2em;
-            margin-bottom: 16px;
+            font-size: 2.2em;
+            margin-bottom: 30px;
+            letter-spacing: 0.05em;
         }
-        .sacramento-intro {
-            color: #b8a98a;
+        .sacramento-copy {
+            margin: 0 auto 48px;
+            text-align: left;
+            border-left: 3px solid rgba(201,168,76,0.4);
+            padding-left: 24px;
+        }
+        .sacramento-copy p {
+            color: #c8b99a;
             font-family: 'Crimson Text', serif;
-            font-size: 1.15em;
-            max-width: 700px;
-            margin: 0 auto 40px;
-            font-style: italic;
+            font-size: 1.12em;
+            line-height: 1.85;
+            margin-bottom: 16px;
         }
         .faq-list {
             max-width: 800px;
@@ -87,63 +101,42 @@
         
         /* Accordion Styles */
         .accordion-item {
-            border-bottom: 1px solid rgba(201,168,76,0.25);
-            margin: 0;
+            border-bottom: 1px solid rgba(201,168,76,0.2);
         }
         .accordion-btn {
             width: 100%;
             background: none;
             border: none;
-            padding: 22px 0;
+            padding: 22px 4px;
             text-align: left;
             cursor: pointer;
             display: flex;
             justify-content: space-between;
             align-items: center;
             font-family: 'Cinzel', serif;
-            font-size: 1em;
+            font-size: 0.95em;
             color: #e8d9b8;
             font-weight: 600;
             transition: color 0.3s;
         }
-        .accordion-btn:hover {
-            color: #C9A84C;
-        }
+        .accordion-btn:hover { color: #C9A84C; }
         .accordion-btn .icon {
-            font-size: 1.2em;
+            font-size: 1.3em;
             color: #C9A84C;
-            transition: transform 0.3s;
             flex-shrink: 0;
             margin-left: 16px;
-        }
-        .accordion-btn.active .icon {
-            transform: rotate(180deg);
+            transition: transform 0.2s;
         }
         .accordion-body {
             display: none;
-            padding: 0 0 20px 0;
+            padding: 4px 4px 20px;
             color: #c8b99a;
             font-family: 'Crimson Text', serif;
-            font-size: 1.05em;
-            line-height: 1.7;
+            font-size: 1.08em;
+            line-height: 1.75;
         }
-        .accordion-body.open {
-            display: block;
-        }
-    
-.sacramento-copy {
-  max-width: 800px;
-  margin: 0 auto 40px;
-  text-align: left;
-}
-.sacramento-copy p {
-  color: #c8b99a;
-  font-family: 'Crimson Text', serif;
-  font-size: 1.1em;
-  line-height: 1.8;
-  margin-bottom: 16px;
-}
-</style>
+        .accordion-body.open { display: block; }
+    </style>
 </head>
 <body>
     <header class="hero">
@@ -167,8 +160,8 @@
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#igreja">A Igreja</a></li>
                 <li><a href="#liturgia">Liturgia</a></li>
-                <li><a href="#batizados">Batizados</a></li>
                 <li><a href="#casamentos">Casamentos</a></li>
+                <li><a href="#batizados">Batizados</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </div>
@@ -249,107 +242,65 @@
             </div>
         </section>
 
-        <section id="batizados" class="sacramento-section">
-            <h2>✦ Batizados ✦</h2>
-            <p class="sacramento-intro">O Batismo é o primeiro e fundamental sacramento da vida cristã na tradição síria ortodoxa.</p>
-            
-            <div class="faq-list">
-                <div class="accordion-item">
-                    <button class="accordion-btn">
-                        Como é realizado o Batizado?
-                        <span class="icon">⊉|/span>
-                    </button>
-                    <div class="accordion-body">
-                        O Batismo é realizado por imersão, seguindo o rito sírio ortodoxo ancestral. É necessária a presença do padre e de padrinhos cristãos ortodoxos praticantes.
-                    </div>
+        <section id="casamentos" class="sacramento-section sacramento-casamentos">
+            <div class="sacramento-container">
+                <h2 class="sacramento-title">✦ Casamentos ✦</h2>
+                <div class="sacramento-copy">
+                    <p>Na Igreja Síria Ortodoxa, o Matrimônio não é apenas uma celebração — é um sacramento de coroação. Os noivos são coroados diante de Deus e da comunidade como reis e rainhas do lar que estão fundando.</p>
+                    <p>A cerimônia é realizada dentro da Igreja, com a liturgia completa do rito sírio, em um dos ambientes mais belos e históricos de Campo Grande: a Igreja São Jorge, fundada em 1971, a segunda de seu rito construída no Brasil. Um casamento aqui não é apenas uma data no calendário — é um evento que conecta duas famílias a mais de dois mil anos de tradição cristã.</p>
                 </div>
-                <div class="accordion-item">
-                    <button class="accordion-btn">
-                        Quais documentos são necessários?
-                        <span class="icon">＋</span>
-                    </button>
-                    <div class="accordion-body">
-                        Certidão de nascimento da criança, documentos dos pais e padrinhos, e participação na catequese prévia obrigatória para pais e padrinhos.
+                <div class="faq-list">
+                    <div class="accordion-item">
+                        <button class="accordion-btn">Como funciona o casamento na Igreja Síria Ortodoxa?<span class="icon">＋</span></button>
+                        <div class="accordion-body">O casamento é um sacramento de coroação realizado dentro da Igreja, com a liturgia completa do rito sírio ortodoxo. Não é permitido casamento apenas civil sem o sacramento religioso para membros da comunidade.</div>
                     </div>
-                </div>
-                <div class="accordion-item">
-                    <button class="accordion-btn">
-                        Quem pode ser padrinho ou madrinha?
-                        <span class="icon">＋</span>
-                    </button>
-                    <div class="accordion-body">
-                        Os padrinhos devem ser cristãos ortodoxos praticantes. É uma responsabilidade espiritual séria dentro da tradição ortodoxa oriental.
+                    <div class="accordion-item">
+                        <button class="accordion-btn">É possível casamento misto (um cônjuge não-ortodoxo)?<span class="icon">＋</span></button>
+                        <div class="accordion-body">Casamentos mistos são possíveis mediante autorização específica da autoridade eclesiástica. Entre em contato para orientações.</div>
                     </div>
-                </div>
-                <div class="accordion-item">
-                    <button class="accordion-btn">
-                        Qual a melhor idade para batizar?
-                        <span class="icon">＋</span>
-                    </button>
-                    <div class="accordion-body">
-                        A Igreja incentiva o Batismo nos primeiros meses de vida da criança, seguindo a tradição ancestral da Igreja de Antioquia.
+                    <div class="accordion-item">
+                        <button class="accordion-btn">Quais documentos são necessários?<span class="icon">＋</span></button>
+                        <div class="accordion-body">Certidões de Batismo ortodoxo de ambos, certidão de estado civil (solteiros), documento de casamento civil realizado previamente, e outros documentos a confirmar na secretaria.</div>
                     </div>
-                </div>
-                <div class="accordion-item">
-                    <button class="accordion-btn">
-                        Como agendar?
-                        <span class="icon">＋</span>
-                    </button>
-                    <div class="accordion-body">
-                        Ligue para <strong>(67) 3324-7937</strong> — Secretaria: segunda a sexta, 8h-10h e 14h-16h.
+                    <div class="accordion-item">
+                        <button class="accordion-btn">Posso decorar a Igreja?<span class="icon">＋</span></button>
+                        <div class="accordion-body">A decoração é permitida de forma sutil e respeitosa, sem interferir nos ícones e elementos sagrados da Igreja.</div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-btn">Como agendar?<span class="icon">＋</span></button>
+                        <div class="accordion-body">Ligue para <strong>(67) 3324-7937</strong> — Secretaria: segunda a sexta, 8h–10h e 14h–16h. Sábados a secretaria não funciona.</div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="casamentos" class="sacramento-section sacramento-alt">
-            <h2>✦ Casamentos ✦</h2>
-            <p class="sacramento-intro">O sacramento do Matrimônio é celebrado como coroação dos noivos, dentro da Igreja, com toda a solenidade da liturgia síria ortodoxa.</p>
-            
-            <div class="faq-list">
-                <div class="accordion-item">
-                    <button class="accordion-btn">
-                        Como funciona o casamento na Igreja Síria Ortodoxa?
-                        <span class="icon">＋</span>
-                    </button>
-                    <div class="accordion-body">
-                        O casamento é um sacramento de coroação realizado dentro da Igreja, com a liturgia completa do rito sírio ortodoxo. Não é permitido casamento apenas civil sem o sacramento religioso para membros da comunidade.
-                    </div>
+        <section id="batizados" class="sacramento-section sacramento-batizados">
+            <div class="sacramento-container">
+                <h2 class="sacramento-title">✦ Batizados ✦</h2>
+                <div class="sacramento-copy">
+                    <p>O Batismo é o sacramento de entrada na vida cristã e na comunidade ortodoxa. Na tradição síria ortodoxa, herdada diretamente da Igreja de Antioquia — fundada pelos próprios apóstolos — o Batismo é realizado por imersão completa, símbolo da morte e ressurreição em Cristo.</p>
+                    <p>A Igreja São Jorge incentiva que as crianças sejam batizadas nos primeiros meses de vida, acolhendo-as desde cedo na comunhão dos fiéis. Para os pais e padrinhos, o sacramento começa antes da cerimônia: com a catequese e o compromisso de criarem a criança na fé ortodoxa.</p>
                 </div>
-                <div class="accordion-item">
-                    <button class="accordion-btn">
-                        É possível casamento misto (um cônjuge não-ortodoxo)?
-                        <span class="icon">＋</span>
-                    </button>
-                    <div class="accordion-body">
-                        Casamentos mistos são possíveis mediante autorização específica da autoridade eclesiástica. Entre em contato para orientações.
+                <div class="faq-list">
+                    <div class="accordion-item">
+                        <button class="accordion-btn">Como é realizado o Batizado?<span class="icon">＋</span></button>
+                        <div class="accordion-body">O Batismo é realizado por imersão, seguindo o rito sírio ortodoxo ancestral. É necessária a presença do padre e de padrinhos cristãos ortodoxos praticantes.</div>
                     </div>
-                </div>
-                <div class="accordion-item">
-                    <button class="accordion-btn">
-                        Quais documentos são necessários?
-                        <span class="icon">＋</span>
-                    </button>
-                    <div class="accordion-body">
-                        Certidões de Batismo ortodoxo de ambos, certidão de estado civil (solteiros), documento de casamento civil realizado previamente, e outros documentos a confirmar na secretaria.
+                    <div class="accordion-item">
+                        <button class="accordion-btn">Quais documentos são necessários?<span class="icon">＋</span></button>
+                        <div class="accordion-body">Certidão de nascimento da criança, documentos dos pais e padrinhos, e participação na catequese prévia obrigatória para pais e padrinhos.</div>
                     </div>
-                </div>
-                <div class="accordion-item">
-                    <button class="accordion-btn">
-                        Posso decorar a Igreja?
-                        <span class="icon">＋</span>
-                    </button>
-                    <div class="accordion-body">
-                        A decoração é permitida de forma sutil e respeitosa, sem interferir nos ícones e elementos sagrados da Igreja.
+                    <div class="accordion-item">
+                        <button class="accordion-btn">Quem pode ser padrinho ou madrinha?<span class="icon">＋</span></button>
+                        <div class="accordion-body">Os padrinhos devem ser cristãos ortodoxos praticantes. É uma responsabilidade espiritual séria dentro da tradição ortodoxa oriental.</div>
                     </div>
-                </div>
-                <div class="accordion-item">
-                    <button class="accordion-btn">
-                        Como agendar?
-                        <span class="icon">＋</span>
-                    </button>
-                    <div class="accordion-body">
-                        Ligue para <strong>(67) 3324-7937</strong> — Secretaria: segunda a sexta, 8h-10h e 14h-16h. Sábados a secretaria não funciona.
+                    <div class="accordion-item">
+                        <button class="accordion-btn">Qual a melhor idade para batizar?<span class="icon">＋</span></button>
+                        <div class="accordion-body">A Igreja incentiva o Batismo nos primeiros meses de vida da criança, seguindo a tradição ancestral da Igreja de Antioquia.</div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-btn">Como agendar?<span class="icon">＋</span></button>
+                        <div class="accordion-body">Ligue para <strong>(67) 3324-7937</strong> — Secretaria: segunda a sexta, 8h–10h e 14h–16h.</div>
                     </div>
                 </div>
             </div>
@@ -403,20 +354,15 @@
 
     <script>
         document.querySelectorAll('.accordion-btn').forEach(btn => {
-  btn.querySelector('.icon').textContent = '＋';
+            btn.querySelector('.icon').textContent = '＋';
             btn.addEventListener('click', function() {
                 const body = this.nextElementSibling;
                 const isOpen = body.classList.contains('open');
-                // Fechar todos
                 document.querySelectorAll('.accordion-body').forEach(b => b.classList.remove('open'));
-                document.querySelectorAll('.accordion-btn').forEach(b => {
-        b.classList.remove('active');
-        b.querySelector('.icon').textContent = '＋';
-      });
-                // Abrir o clicado (se estava fechado)
+                document.querySelectorAll('.accordion-btn .icon').forEach(i => i.textContent = '＋');
                 if (!isOpen) {
                     body.classList.add('open');
-                    this.classList.add('active');
+                    this.querySelector('.icon').textContent = '−';
                 }
             });
         });
